@@ -1,0 +1,11 @@
+{
+  "name": "marytutorsmath",
+  "version": "1.0.0",
+  "description": "Website for Mary Wayock, Math Tutor",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine"
+  },
+  "author": "wayock",
+  "license": "ISC"
+}
