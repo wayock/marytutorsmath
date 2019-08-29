@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+
+      <!-- Navigation -->
+    <% include ./partials/navbar.ejs %>
+
+      <!-- Page Content -->
+      <main class="container">
+
+        <!-- Jumbotron Header -->
+        <header style="text-align: center;" class="jumbotron my-4">
+          <h1 class="display-3">Welcome to Mary Tutors Math!</h1>
+          <p class="lead">Empowering Students to Learn Math</p>
+          <ion-icon name="calculator" style= "font-size: 200px;"></ion-icon>
+        </header>
+
+        <!-- Page Features -->
+        <section class="row text-center">
+
+          <section class="col-sm-6 border border-info rounded p-3 mb-2 bg-info text-white"">
+            <h4 class="card-title">Free Plan</h4>
+            <ion-icon name="people" style= "font-size: 100px;"></ion-icon>
+            <p class="card-text">Create as many public plans as you want.</p>
+          </section>
+          <section class="col-sm-6 border border-dark rounded p-3 mb-2 bg-dark text-white">
+            <h4 class="card-title">Premium Plan</h4>
+            <ion-icon name="finger-print" style= "font-size: 100px;" ></ion-icon>
+            <p class="card-text">Create private wikis.</p>
+          </section>
+        </section>
+        <!-- /.row -->
+        <section style="text-align: center;" class="row text-center">
+          <section style="text-align: center;" class="col-sm-6 border border-info rounded p-3 mb-2 bg-info text-white"">
+            <h4 class="card-title">Free Plan</h4>
+            <ion-icon name="people" style= "font-size: 100px;"></ion-icon>
+            <p class="card-text">Create as many public plans as you want.</p>
+          </section>
+        </section>
+      </main>
+      <!-- /.container -->
+      <% include ./partials/baseScripts.ejs %>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    </body>
+</html>

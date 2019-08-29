@@ -1,0 +1,10 @@
+
+body {
+  padding-top: 60px;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
