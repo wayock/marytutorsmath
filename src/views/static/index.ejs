@@ -9,35 +9,112 @@
     <% include ./partials/navbar.ejs %>
 
       <!-- Page Content -->
-      <main class="container">
+      <main class="container  ">
 
-        <!-- Jumbotron Header -->
-        <header style="text-align: center;" class="jumbotron my-4">
-          <h1 class="display-3">Welcome to Mary Tutors Math!</h1>
-          <p class="lead">Empowering Students to Learn Math</p>
-          <ion-icon name="calculator" style= "font-size: 200px;"></ion-icon>
+        <!--  Header -->
+        <header class="row centered-form center-block text-center">
+          <section class="container col-md-12 col-md-offset-1 border border-info rounded p-3 mb-2 text-info"">
+            <h1 class="display-3">Welcome to Mary Tutors Math!</h1>
+            <p class="lead">Empowering Students to Learn Math</p>
+            <!-- <img src=".../assets/pictures/calculations.png" />  -->
+            <ion-icon name="calculator" style= "font-size: 150px;"></ion-icon>
+          </div>
         </header>
 
         <!-- Page Features -->
-        <section class="row text-center">
-
-          <section class="col-sm-6 border border-info rounded p-3 mb-2 bg-info text-white"">
-            <h4 class="card-title">Free Plan</h4>
-            <ion-icon name="people" style= "font-size: 100px;"></ion-icon>
-            <p class="card-text">Create as many public plans as you want.</p>
+        <!-- /.row -->
+        <section class="row centered-form center-block text-center">
+          <section class="container col-md-6 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white"">
+            <img src="pictures/WNFZE6466.jpg" style=width:200px;height:200px;" alt="Author image">
           </section>
-          <section class="col-sm-6 border border-dark rounded p-3 mb-2 bg-dark text-white">
-            <h4 class="card-title">Premium Plan</h4>
-            <ion-icon name="finger-print" style= "font-size: 100px;" ></ion-icon>
-            <p class="card-text">Create private wikis.</p>
+          <section class="container col-md-6 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white"">
+
+            <h4 class="card-title">About Me</h4>
+            <p class="card-text">
+              <ul style="list-style-type:none">
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+              </ul>
+            </p>
           </section>
         </section>
         <!-- /.row -->
-        <section style="text-align: center;" class="row text-center">
-          <section style="text-align: center;" class="col-sm-6 border border-info rounded p-3 mb-2 bg-info text-white"">
-            <h4 class="card-title">Free Plan</h4>
-            <ion-icon name="people" style= "font-size: 100px;"></ion-icon>
-            <p class="card-text">Create as many public plans as you want.</p>
+        <section class="row centered-form center-block text-center">
+          <section class="container col-md-12 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white"">
+            <h4 class="card-title">Need Tutoring?</h4>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputParentFirstName4">Parent's First Name</label>
+                  <input type="text" class="form-control" id="inputParentFirstName4" placeholder="Parent's First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputParentLastName4">Parent's Last Name</label>
+                  <input type="text" class="form-control" id="inputParentLastName4" placeholder="Parent's Last Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputStudentFirstName4">Student's First Name</label>
+                  <input type="text" class="form-control" id="inputStudentFirstName4" placeholder="Student's First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputStudentLastName4">Student's Last Name</label>
+                  <input type="text" class="form-control" id="inputStudentLastName4" placeholder="Student's Last Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="phone4">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone4" placeholder="xxx-xxx-xxxx">
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6>
+                    <label for="grade4">Grade</label>
+                    <select class="form-control" id="grade4">
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputMathSubject4">Math Subject</label>
+                    <input type="text" class="form-control" id="inputMathSubject4" placeholder="Math Subject">
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="inputdetails4">Details and Availibility</label>
+                <input type="text" class="form-control" id="inputdetails4" placeholder="Details and Availbility">
+              </div>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    I am not a robot.
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
+        </section>
+        <!-- /.row -->
+        <section class="row centered-form center-block text-center">
+          <section class="container col-md-12 col-md-offset-1 border rounded p-3 mb-2 bg-primary text-white"">
+            <h4 class="card-title">Math API</h4>
+            <p class="card-text">Math Fact Goes Here</p>
           </section>
         </section>
       </main>
