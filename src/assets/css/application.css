@@ -8,3 +8,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
+
+.file-bar {
+    background: ##d0d9e4;
+    padding: 5px 15px;
+    overflow-x: auto;
+}
