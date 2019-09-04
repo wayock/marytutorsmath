@@ -1,0 +1,10 @@
+<html>
+  <head><title>Admin</title></head>
+  <body>
+    <div><h1>Admin Area</h1></div>
+    <ul>
+      <% contents.forEach(c => { %>
+        <li><%= c.name %> <a href="/admin/contents/edit/<%= c.id %>">Edit</a></li>
+      <% }); %>
+    </ul>
+</html>
