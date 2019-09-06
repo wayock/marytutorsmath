@@ -5,14 +5,13 @@ const appConfig = require("./config/main-config.js");
 const routeConfig = require("./config/route-config.js");
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
+var api_key = process.env.MAILGUN_API_KEY;
+var domain = 'sandboxfe530aa7650e4fba98e7ef18a3f061a2.mailgun.org';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.post('/form', function (req, res){
-  var api_key = process.env.MAILGUN_API_KEY;
-  var domain = 'sandboxfe530aa7650e4fba98e7ef18a3f061a2.mailgun.org';
-  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
   var data = {
     from: 'Mail Gun Mary Tutors Math<postmaster@sandboxfe530aa7650e4fba98e7ef18a3f061a2.mailgun.org>',
