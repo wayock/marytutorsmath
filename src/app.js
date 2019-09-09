@@ -55,7 +55,7 @@ app.post('/form', urlencodedParser, function (req, res){
   const msg = {
     to: 'marywayock@gmail.com',
     from: 'marytutorsmath@math.com',
-    subject: 'New Tutoring Request',
+    subject: `New Tutoring Request from ${req.body.inputParentFirstName4} ${req.body.inputParentLastName4}`,
     text: 'Please help me learn math!',
      html: `Parent name: ${req.body.inputParentFirstName4} ${req.body.inputParentLastName4} <br />
   Student Name: ${req.body.inputStudentFirstName4} ${req.body.inputStudentLastName4} <br />
@@ -66,7 +66,7 @@ app.post('/form', urlencodedParser, function (req, res){
   Details: ${req.body.inputDetails4}`
   };
   sgMail.send(msg);
-  //req.flash('success', 'You have successfully submitted your form.  Mary will be in contact with you in the near future.')
+  req.flash('success', 'You have successfully submitted your form.  Mary will be in contact with you in the near future.')
   res.redirect("/");
 
 });
