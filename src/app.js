@@ -40,6 +40,7 @@ app.post('/form', urlencodedParser, function (req, res){
   sgMail.send(msg);
   //req.flash('success', 'You have successfully submitted your form.  Mary will be in contact with you in the near future.')
   res.redirect("/");
+  
 
 });
 
