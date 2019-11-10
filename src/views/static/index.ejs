@@ -9,15 +9,13 @@
     <% include ./partials/navbar.ejs %>
 
       <!-- Page Content -->
-      <main class="container  ">
+      <main class="container">
         <% include ../static/partials/messages.ejs %>
         <!--  Header -->
         <header class="row centered-form center-block text-center">
-          <section class="container col-md-12 col-md-offset-1 border border-white rounded p-3 mb-2 text-info">
+          <section id="logo" class="container col-md-12 col-md-offset-1 bg-white border border-white rounded p-3 mb-2 text-info">
 
           <div>
-            <!-- <img src="pictures/WNFZE6466.jpg" style=width:200px;height:200px;" alt="Author image">
-            <img src="pictures/cover.png" alt="Mary Tutors Math Logo"> -->
             <picture>
               <source media="(max-width: 576px)"
                       srcset="pictures/cover_white.png" alt="Mary Tutors Math Logo">
@@ -28,34 +26,33 @@
               <img src="pictures/cover_white.png" style=width:100%;height:400px;" alt="Mary Tutors Math Logo">
             </picture>
 
-                        <!-- <h1 class="display-3">Welcome to Mary Tutors Math!</h1>
-                        <p class="lead">Empowering Students to Learn Math</p>
-                        <img src=".../assets/pictures/calculations.png" />
-                        <ion-icon name="calculator" style= "font-size: 150px;"></ion-icon> -->
           </div>
         </header>
 
-        <!-- Page Features -->
-        <!-- /.row -->
         <section class="row centered-form center-block text-center">
           <section class="container d-flex flex-wrap align-items-center justify-content-center col-md-6 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white"">
-            <img src="pictures/Mary2016.jpg" style=width:350px;height:200px;" alt="Author image">
+            <img src="pictures/MaryWayock.jpg" style="width:350px;height:auto;" alt="Author image">
           </section>
-          <section class="container col-md-6 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white"">
-
-            <h4 class="card-title">About Mary Wayock</h4>
+          <section class="container col-md-6 col-md-offset-1 border  rounded p-3 mb-2 bg-info text-white justify-content-center">
+            <br>
+            <h2 class="card-title">About Mary Wayock</h4>
+            <br>
             <p class="card-text ">
               <p>I am passionate about math and helping students learn.
                 <br>
                 Here are few facts about who I am:
               </p>
-              <ul style="list-style-type:none">
+              <ul class="about-list">
                 <li>Certified Math teacher</li>
                 <li>Tutoring since 2006</li>
                 <li>Enjoy teaching Math</li>
-                <li>Love my children, sudoku puzzles and chocolate <li>
+                <br>
+                <ion-icon name="calculator" style="font-size: 200px;"></ion-icon>
+                <br>
+                <li>When not tutoring, I love spending time with my children, working on sudoku puzzles,
+                   and eating chocolate.
+                <li>
               </ul>
-                <p>See my credentials on the resume page</p>
             </p>
           </section>
         </section>
